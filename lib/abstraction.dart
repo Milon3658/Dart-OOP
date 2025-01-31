@@ -8,11 +8,18 @@ abstract class MyInfo {
 }
 
 class Milon extends MyInfo {
-  Milon({super.name, super.address, super.email, super.phone});
+  String subject;
+  Milon(
+      {super.name,
+      super.address,
+      super.email,
+      super.phone,
+      required this.subject});
   void showInfo() {
     print('Name: $name');
     print('Address: $address');
     print('Email: $email');
     print('Phone: $phone');
+    print('Subject: $subject');
   }
 }

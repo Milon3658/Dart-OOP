@@ -9,7 +9,8 @@ void main(List<String> arguments) {
       name: 'Milon',
       address: 'Dhaka',
       email: 'example@gmail.com',
-      phone: '01700000000');
+      phone: '01700000000',
+      subject: 'CSE');
 
   print(mycar.make);
   myself.showInfo();
