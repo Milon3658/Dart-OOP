@@ -5,6 +5,13 @@ abstract class MyInfo {
   String? phone;
 
   MyInfo({this.name, this.address, this.email, this.phone});
+
+  void basicInfo() {
+    print('Name: $name');
+    print('Address: $address');
+    print('Email: $email');
+    print('Phone: $phone');
+  }
 }
 
 class Milon extends MyInfo {
@@ -15,7 +22,19 @@ class Milon extends MyInfo {
       super.email,
       super.phone,
       required this.subject});
+  // super() is used to call the constructor of the parent class.
   void showInfo() {
+    print('Name: $name');
+    print('Address: $address');
+    print('Email: $email');
+    print('Phone: $phone');
+    print('Subject: $subject');
+  }
+
+  // Overriding the basicInfo() method of the parent class.
+
+  @override
+  void basicInfo() {
     print('Name: $name');
     print('Address: $address');
     print('Email: $email');

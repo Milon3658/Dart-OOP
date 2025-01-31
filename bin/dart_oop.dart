@@ -14,4 +14,5 @@ void main(List<String> arguments) {
 
   print(mycar.make);
   myself.showInfo();
+  myself.basicInfo();
 }
